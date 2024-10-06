@@ -18,5 +18,5 @@
 
 📫 `Let's connect!`
 
-- Email: sallyliubj@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/sally-l-30923b251/](https://www.linkedin.com/in/sally-l-30923b251/)
+- `Email:` sallyliubj@gmail.com
+- `LinkedIn:` [https://www.linkedin.com/in/sally-l-30923b251/](https://www.linkedin.com/in/sally-l-30923b251/)
