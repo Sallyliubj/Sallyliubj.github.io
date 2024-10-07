@@ -1,6 +1,11 @@
 `Hi there, I'm Sally Liu` 👋
 
-`I'm currently pursuing B.S in Computer Science at Columbia University, and B.A in Mathematics and Computer Science at Middlebury College. I love building software that makes a real difference—whether it’s crafting an app, creating tools to solve tough problems, or just making life a little easier with code. At the same time, I'm eagerly exploring the possibilities of machine learning, deep learning, and large language models (LLMs) in scientific fields.`
+🎓 `Education:`
+
+- `CS @ Columbia University`
+- `Math & CS @ Middlebury College`
+
+`I'm currently a junior pursuing Computer Science at Columbia University. I love building software that makes a real difference—whether it’s crafting an app, creating tools to solve tough problems, or just making life a little easier with code. At the same time, I'm eagerly exploring the possibilities of machine learning, deep learning, and large language models (LLMs) in scientific fields.`
 
 
 🌱 `Currently, I'm focusing on:`
