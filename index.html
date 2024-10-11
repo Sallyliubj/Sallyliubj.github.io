@@ -1,39 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sally Liu - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Sally's Website</title>
+    <script src="https://kit.fontawesome.com/579f6a466d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Sally Liu</h1>
-        <p>CS Student at Columbia University</p>
-        <p>Math & CS Student at Middlebury College</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>My name Sally Liu, a CS student at Columbia University. 
-            I love building software that makes a real difference—whether it’s crafting an app, 
-            creating tools to solve tough problems, or just making life a little easier with code. 
-            At the same time, I'm eagerly exploring the possibilities of machine learning, deep learning, 
-            and large language models (LLMs) in scientific fields.</p>
-    
-        </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>OneSip App:</strong> Developed backend server infrastructure and designed the database for a cocktail discovery app.</li>
-            <li><strong>Healthcare Chatbot:</strong> Created a chatbot that helps students balance study-life schedules using AI.</li>
-            <li><strong>Mask R-CNN Research:</strong> Developed a self-supervised training framework for image segmentation.</li>
-        </ul>
+    <section id="header">
+        <nav>
+            <div>
+                <p class="username">@Sally_(Bojun)_Liu</p>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#hobbies">LIFE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h2>Hi there, I'm Sally Liu 👋</h2>
+            <p>I'm currently a junior pursuing B.S. in Computer Science at Columbia University and B.A. in Mathematics and Computer Science at Middlebury College.</p>
+            <p>I’m passionate about building software that makes a real difference—whether it's solving everyday challenges or exploring innovative applications of machine learning, deep learning, and LLMs.</p>
+            <a href="#about" class="hero-btn">Know More About Me</a>
+        </div>
+
+        <div class="footer">
+            <div class="icons">
+                <a href="https://github.com/Sallyliubj"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sally-liu-30923b251/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p><i class="fa fa-heart-o"></i> by Sally Liu</p>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sallyliubj@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sally-l-30923b251/">lhttps://www.linkedin.com/in/sally-l-30923b251/</a></p>
-        <p>GitHub: <a href="https://github.com/Sallyliubj">https://github.com/Sallyliubj</a></p>
-    </section>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class = "nav-btn">
+            <a href="#header">GO BACK</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="icons">
+                        <a href="https://github.com/Sallyliubj"><i class="fa fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sallyliubj"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('research')">Research</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            
+                            <li><span>Columbia University</span><br>B.S in Computer Science (Graduation Year: 2026)</li>
+                            <li>Relevant Coursework:
+                                <ul>
+                                    <li>Databases, System Programming, Data-Driven Decision Modelling</li>
+                                    <li>Machine Learning for Functional Genomics</li>
+                                </ul>
+                            </li>
+                            <li><span><a href="https://www.middlebury.edu/">Middlebury College</a></span><br>B.A in Mathematics and Computer Science (Graduation Year: 2025)</li>
+                            <li>Relevant Coursework:
+                                <ul>
+                                    <li>Probability, Stochastic Processes, Data Structures, Algorithms,</li>
+                                    <li>Computer Architecture, Machine Learning, Image Processing</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software Engineer Intern (Ongoing)</span><br>One Sip, LLC (Startup)
+                                <p>Developing the backend server infrastructure, deploying database, and implementing user authentication and registration systems</p>
+                            </li>
+                            <li><span>Project Assistant</span><br>Middlebury College
+                                <p>Guided students through their independent senior capstone projects</p>
+                            </li>
+
+                            <li><span>Teaching Assistant</span><br>Department of Computer Science, Middlebury College
+                                <p>Graded assignments and tutored for courses Data Structures and Machine Learning</p>
+                            </li>
+                            <li><span>Product Engineer Intern</span><br>Huatai Securities
+                                <p>Real-time 3D human body motion capture with monocular camera</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="research">
+                        <ul>
+                            <li><span>Hybrid AI for Drug Discovery (Ongoing)</span><br>Fall 2024
+                                <p>Research on domain-specific Large Language Models and applications of Graph Neural Networks on knowledge graphs and ontology</p>
+                            </li>
+                            <li><span>An active Reinforcement Learning from Human Feedback (RLHF) Framework for object detection and segmentation</span><br>Summer 2024
+                            <p>Designed a self-supervised training pipeline for the Mask R-CNN model, integrated user reinforcement process to engage users in validating correct detections and removing false positives during training</p>
+                            </li>
+                            <li><span>Cross-domain transfer network for music recommendation</span><br>Summer 2022
+                            </li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span> Python, Java, C/C++, SQL, MATLAB, R</li>
+                            <li><span>Technologies:</span> PyTorch, Tensorflow, Numpy, Git, Django, AWS, MongoDB, PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Life/Hobbies Section -->
+    <div id="hobbies">
+        <div class="container">
+            <div class = "nav-btn">
+                <a href="#header">GO BACK</a>
+            </div>
+            <h2 class="sub-title">Things I Love</h2>
+            <div class="hobbies-list">
+                <div>
+                    <i class="fa fa-cutlery"></i>
+                    <h3>Baking</h3>
+                    <p>I earned an Advanced Baking Diploma at Le Cordon Bleu and love experimenting with new recipes.</p>
+                    <a href="hobbies/baking.html">Know more &#8594;</a>
+                </div>
+                <div>
+                    <i class="fa fa-camera-retro"></i>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and telling stories through images is my way of sharing my perspective.</p>
+                    <a href="#">Know more &#8594;</a>
+                </div>
+                <div>
+                    <i class="fa fa-suitcase"></i>
+                    <h3>Travelling</h3>
+                    <p>I enjoy exploring new cultures, tasting different cuisines, and learning through experiences.</p>
+                    <a href="#">Know more &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
 </body>
 </html>

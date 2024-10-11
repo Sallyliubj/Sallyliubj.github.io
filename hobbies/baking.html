@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../css/baking-style.css">
+    <title>Baking</title>
+    <script src="https://kit.fontawesome.com/579f6a466d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>   
+    <div id="header">
+        <div class = "nav-btn">
+          <a href="../index.html#hobbies">GO BACK</a>
+        </div>
+        <div class="container">
+            <h2 class="sub-title">My Bread Journey</h2>
+            <p>My journey with bread started at the age of 14, <br>
+              when a simple loaf of homemade bread opened my eyes to the fascinating world of fermentation.<br>
+              I was captivated by how a few basic ingredients—flour, water, yeast—could transform into something so alive, so comforting. <br>
+              The magic of the rising dough and the art of timing enchanted me.<br>
+              In 2021, I decided to take a gap year before entering college and learned baking at Le Cordon Bleu.<br>
+              It was a year that turned my fascination into a lifelong love for the craft.
+            </p>
+                
+            <div class="baking-list">
+                <div class="bake">
+                    <img src="../images/bread/Le_Cordon_Bleu.jpeg" >
+                    <div class="layer">
+                        <h3>Le Cordon Bleu</h3>
+                        <p><a href="#bread-recipe">My Bread Recipe</a></p>                     
+                    </div>
+                </div>
+                <div class="bake">
+                  <img src="https://i.pinimg.com/564x/4a/3a/ed/4a3aedffb1300dece381b8e26b8b6430.jpg">
+                  <div class="layer">
+                      <h3>Collections</h3>
+                      <p><a href="#">Find Out</a></p>     
+                  </div>
+              </div>
+              <div class="bake">
+                <img src="../images/bread/bread_snowman.JPG" height="90%" width="auto">
+                <div class="layer">
+                    <h3>Fermentation</h3>
+                    <p><a href="#">Find Out</a></p>     
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="bread-recipe">
+
+        <h2>My Bread Recipe</h2>
+        <hr>
+        <h4 style="color:antiquewhite">From Le Cordon Bleu</h4>
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('salty')"> Salty</button>
+          <button class="btn" onclick="filterSelection('sweet')"> Sweet</button>
+          <button class="btn" onclick="filterSelection('puff')"> Puff Pastry</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column salty">
+                <div class="content">
+                  <a href="../images/bread/recipe/Baguette.jpg"><img src="../images/bread/pics/Baguette.jpeg" alt="baguette" style="width:100%"></a>
+                  <h4>Baguette</h4>
+                  <p></p>
+                </div>
+          </div>
+          <div class="column salty">
+            <div class="content">
+              <a href="../images/bread/recipe/pain_aux_olive.JPG"><img src="../images/bread/pics/pain_aux_olive.JPG" alt="pain-aux-olive" style="width:100%"></a>
+              <h4>Pain Aux Olive</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column puff">
+            <div class="content">
+            <a href="../images/bread/recipe/croissant.JPG"><img src="../images/bread/pics/croissant.jpeg" alt="croissant" style="width:100%"></a>
+              <h4>Croissant</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column salty">
+            <div class="content">
+              <a href="../images/bread/recipe/pain_aux_noix.JPG"><img src="../images/bread/pics/pain_aux_noix.jpeg" alt="pain_aux_noix" style="width:100%"></a>
+              <h4>Pain Aux Noix</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column sweet">
+            <div class="content">
+              <a href="../images/bread/recipe/tresse.JPG"><img src="../images/bread/pics/tresse.jpeg" alt="tresse" style="width:100%"></a>
+              <h4>Tresse</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column salty">
+            <div class="content">
+            <a href="images/bread/recipe/boule_margerite.JPG"><img src="../images/bread/pics/boule_margerite.jpeg" alt="boule_margerite" style="width:100%"></a>
+              <h4>Boule  Margerite</h4>
+              <p></p>
+            </div>
+          </div>
+        
+          <div class="column sourdough">
+            <div class="content">
+              <a href="../images/bread/recipe/petit_pains_fantaisie2.JPG"><img src="../images/bread/pics/petit_pains_fantaisie2.jpeg" alt="Car" style="width:100%"></a>
+              <h4>Petit Pain Fantaisie</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column salty">
+            <div class="content">
+            <a href="../images/bread/recipe/baguette_viennoise.JPG"><img src="../images/bread/pics/baguette_viennoise.jpeg" alt="baguette_viennoise" style="width:70%; margin-left:45px"></a>
+              <h4>Baguette Vienooise</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="column salty">
+            <div class="content">
+            <a href="../images/bread/recipe/baguettes_epi_de_tradition_au_levain_liquide.JPG"><img src="../images/bread/pics/baguettes_epi_de_tradition_au_levain_liquide.jpeg" alt="baguettes_epi_de_tradition_au_levain_liquide" style="width:100%"></a>
+              <h4>Baguettes Epi de Tradition au Levain Liquide</h4>
+              <p></p>
+            </div>
+          </div>
+         <div class="column sweet">
+            <div class="content">
+            <a href="../images/bread/recipe/brioche_de_rois_du_sud.JPG"><img src="../images/bread/pics/brioche_de_rois_du_sud.jpeg" alt="brioche_de_rois_du_sud" style="width:100%"></a>
+              <h4>Brioche de Rois du Sud</h4>
+              <p></p>
+            </div>
+         </div>
+         <div class="column puff">
+          <div class="content">
+          <a href="../images/bread/recipe/brioche_feuilletee.JPG"><img src="../images/bread/pics/brioche_feuilletee.jpeg" alt="brioche_feuilletee" style="width:70%; margin-left:45px"></a>
+            <h4>Brioche Feuilletee</h4>
+            <p></p>
+          </div>
+       </div>
+     <div class="column sweet">
+        <div class="content">
+        <a href="../images/bread/recipe/brioche_sur_poolish_beignet.JPG"><img src="../images/bread/pics/brioche_sur_poolish_beignet.jpeg" alt="brioche_sur_poolish_beignet" style="width:100%"></a>
+          <h4>Brioche Sur Poolish Beignet</h4>
+          <p></p>
+        </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/brioche_vendeenne.JPG"><img src="../images/bread/pics/brioche_vendeenne.jpeg" alt="brioche_vendeenne" style="width:100%"></a>
+        <h4>/Brioche Vendeenne</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/brioche.JPG"><img src="../images/bread/pics/brioche.jpeg" alt="brioche" style="width:100%"></a>
+        <h4>Brioche</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/brioches_aux_pommes.JPG"><img src="../images/bread/pics/brioches_aux_pommes.jpeg" alt="brioches_aux_pommes" style="width:70%; margin-left:45px"></a>
+        <h4>Brioches Aux Pommes</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/Brioches_Aux_Pralines.jpg"><img src="../images/bread/pics/Brioches_Aux_Pralines.jpeg" alt="Brioches_Aux_Pralines" style="width:100%"></a>
+        <h4>Brioches Aux Pralines</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/buns.JPG"><img src="../images/bread/pics/buns.jpeg" alt="buns" style="width:100%"></a>
+        <h4>Buns</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/carre_ganache_caramel_au_beurre_sale.JPG"><img src="../images/bread/pics/carre_ganache_caramel_au_beurre__sale.jpeg" alt="carre_ganache_caramel_au_beurre_sale" style="width:100%"></a>
+        <h4>Carre Ganache Caramel Au Beurre Sale</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/chausson_praline_a_l'orange.JPG"><img src="../images/bread/pics/chausson_praline_a__l'orange.jpeg" alt="chausson_praline_a_l'orange" style="width:70%; margin-left:45px"></a>
+        <h4>Chausson Praline a L'orange</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/ciabatta.JPG"><img src="../images/bread/pics/ciabatta.jpeg" alt="ciabatta" style="width:100%"></a>
+        <h4>Ciabatta</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../"><img src="../images/bread/pics/couque_sweet.jpeg" alt="couque_sweet" style="width:100%"></a>
+        <h4>Couque Sweet</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/couques_sales.JPG"><img src="../images/bread/pics/couques_sales.jpeg" alt="couques_sales" style="width:100%"></a>
+        <h4>Couques Sales</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/couques.JPG"><img src="../images/bread/pics/couques.jpeg" alt="couques" style="width:70%; margin-left:45px"></a>
+        <h4>Couques</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/couques2.JPG"><img src="../images/bread/pics/couques2.jpeg" alt="couques2" style="width:100%"></a>
+        <h4>Couques</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/Croissants_Aux_Amandes.jpg"><img src="../images/bread/pics/Croissants_Aux_Amandes.jpeg" alt="Croissants_Aux_Amandes" style="width:100%"></a>
+        <h4>Croissants Aux Amandes</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/fougasses_garnies_a_la_creme_fraiche.JPG"><img src="../images/bread/pics/fougasses_garnies_a_la_creme_fraiche.jpeg" alt="fougasses_garnies_a_la_creme_fraiche" style="width:70%; margin-left:45px"></a>
+        <h4>Fougasses Garnies A La Creme Fraiche</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/Fougasses.jpg"><img src="../images/bread/pics/Fougasses.jpeg" alt="Fougasses" style="width:70%; margin-left:45px"></a>
+        <h4>Fougasses</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/kouglof_sale.JPG"><img src="../images/bread/pics/kouglof_sale.jpeg" alt="kouglof_sale" style="width:70%; margin-left:45px"></a>
+        <h4>Kouglof Sale</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/kouglof.JPG"><img src="../images/bread/pics/kouglof.jpeg" alt="kouglof" style="width:100%"></a>
+        <h4>Kouglof</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column puff">
+      <div class="content">
+      <a href="../images/bread/recipe/kouing-amann.JPG"><img src="../images/bread/pics/kouing-amann.jpeg" alt="kouing-amann" style="width:100%"></a>
+        <h4>Kouing-amann</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/La_Cramique.jpg"><img src="../images/bread/pics/La_Cramique.jpeg" alt="La_Cramique" style="width:100%"></a>
+        <h4>La Cramique</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../images/bread/recipe/La_Fallue.jpg"><img src="../images/bread/pics/La_Fallue.jpeg" alt="La_Fallue" style="width:100%"></a>
+        <h4>La Fallue</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/miche_decoree_en_pain_brie.JPG"><img src="../images/bread/pics/miche_decoree_en_pain_brie.jpeg" alt="miche_decoree_en_pain_brie" style="width:100%"></a>
+        <h4>Miche Decoree En Pain Brie</h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column salty">
+      <div class="content">
+      <a href="../images/bread/recipe/mini_baguette_PF.JPG"><img src="../images/bread/pics/mini_baguette_PF.jpeg" alt="mini_baguette_PF" style="width:100%"></a>
+        <h4>Mini Baguette PF</h4>
+        <p></p>
+      </div>
+     </div>     
+     <div class="column sweet">
+      <div class="content">
+      <a href="../"><img src="../" alt="" style="width:100%"></a>
+        <h4></h4>
+        <p></p>
+      </div>
+     </div>
+     <div class="column sweet">
+      <div class="content">
+      <a href="../"><img src="../" alt="" style="width:100%"></a>
+        <h4></h4>
+        <p></p>
+      </div>
+     </div>
+
+        <!-- END GRID -->
+        </div>
+        
+    </div>
+
+
+<!-- JavaScript for Gallery -->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+        
+
+</body>
+</html>
