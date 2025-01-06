@@ -1,4 +1,6 @@
-Hi there, I'm Sally Liu 👋
+## Hi there, I'm Sally Liu 👋
+
+----
 
 🎓 Education:
 
