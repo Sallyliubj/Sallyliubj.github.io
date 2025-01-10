@@ -12,17 +12,13 @@
 <body>
     <section id="header">
         <nav>
-            <div>
-                <p class="username">@Sally_(Bojun)_Liu</p>
-            </div>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#hobbies">LIFE</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -41,30 +37,39 @@
                 <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/sallyliubj"><i class="fa fa-linkedin"></i></a>
             </div>
-            <p><i class="fa fa-heart-o"></i> by Sally Liu</p>
         </div>
     </section>
 
     <!-- About Section -->
     <div id="about">
-        <div class = "nav-btn">
+        <!-- <div class = "nav-btn">
             <a href="#header">GO BACK</a>
         </div>
+         -->
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#hobbies">LIFE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <div class="icons">
-                        <a href="https://github.com/Sallyliubj"><i class="fa fa-github"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/sallyliubj"><i class="fa fa-linkedin"></i></a>
-                    </div>
+                    <img src="images/about-image.JPG" alt="MyPhoto">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work</p>
                         <p class="tab-links" onclick="opentab('research')">Research</p>
                         <p class="tab-links" onclick="opentab('skills')">Skills</p>
                     </div>
@@ -73,26 +78,16 @@
                         <ul>
                             
                             <li><span>Columbia University</span><br>B.S in Computer Science (Graduation Year: 2026)</li>
-                            <li>Relevant Coursework:
-                                <ul>
-                                    <li>Databases, System Programming, Data-Driven Decision Modelling</li>
-                                    <li>Machine Learning for Functional Genomics</li>
-                                </ul>
-                            </li>
+                            
                             <li><span><a href="https://www.middlebury.edu/">Middlebury College</a></span><br>B.A in Mathematics and Computer Science (Graduation Year: 2025)</li>
-                            <li>Relevant Coursework:
-                                <ul>
-                                    <li>Probability, Stochastic Processes, Data Structures, Algorithms,</li>
-                                    <li>Computer Architecture, Machine Learning, Image Processing</li>
-                                </ul>
-                            </li>
+                            
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Software Engineer Intern (Ongoing)</span><br>One Sip, LLC (Startup)
-                                <p>Developing the backend server infrastructure, deploying database, and implementing user authentication and registration systems</p>
+                                <p>Developing the backend server infrastructure using Django, deploying database using MongoDB, implementing core functonalities for the MVP</p>
                             </li>
                             <li><span>Project Assistant</span><br>Middlebury College
                                 <p>Guided students through their independent senior capstone projects</p>
@@ -124,7 +119,9 @@
                     <div class="tab-contents" id="skills">
                         <ul>
                             <li><span>Programming Languages:</span> Python, Java, C/C++, SQL, MATLAB, R</li>
-                            <li><span>Technologies:</span> PyTorch, Tensorflow, Numpy, Git, Django, AWS, MongoDB, PostgreSQL</li>
+                            <li><span>Databases:</span> MongoDB, PostgreSQL</li>
+                            <li><span>Frameworks:</span>PyTorch, Tensorflow, Git, Django, Flask</li>
+                            <li><span>Cloud Platforms:</span>AWS, GCP</li>
                         </ul>
                     </div>
                 </div>
@@ -132,13 +129,117 @@
         </div>
     </div>
 
+    
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#hobbies">LIFE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2 class="sub-title">Projects</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('AI/ML')">AI/ML </button>
+            <button class="btn" onclick="filterSelection('software')">Software</button>
+            <button class="btn" onclick="filterSelection('other')">Other</button>
+        </div>
+
+        <div class="row">
+            <div class="column software">
+                <div class="project-item">
+                    <img src="" alt="sports-review-app">
+                    <h3>Sports Review App</h3>
+                    <div>
+                        <p>A Flask-based web application for searching and reviewing sports activities</p>
+                        <a href="https://github.com/Sallyliubj/sports-review-app">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column software">
+                <div class="project-item">
+                    <img src="images/project_imgs/smart-calendar-chatbot.webp" alt="smart-calendar-chatbot">
+                    <h3>Smart Calendar Chatbot</h3>
+                    <div>
+                        <p>A smart chatbot to help college students balance study and life using AI</p>
+                        <a href="https://github.com/Sallyliubj/smart-calendar-chatbot">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column other">
+                <div class="project-item">
+                    <img src="images/project_imgs/object-tracking.png" alt="object-tracking">
+                    <h3>Object Detection & Tracking in Frequency Domain</h3>      
+                    <div>
+                        <p>An innovative approach to track high-frequency moving objects using Fourier Transform, enabling scale-invariant and rotation-invariant tracking with frequency information.</p>
+                        <a href="https://github.com/Sallyliubj/Object-Detection-and-Tracking-in-Frequency-Domain">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column AI/ML">
+                <div class="project-item">
+                    <img src="images/project_imgs/hgcn.png" alt="hgcn">
+                    <h3>Predicting Phylogenetic Trees Using HGCN</h3>
+                    <div>
+                        <p>Leveraged hyperbolic geometry and graph convolutional neural networks to predict the hierarchical structure of phylogenetic trees.</p>
+                        <a href="https://drive.google.com/file/d/1WDS0xiDHI82CyRor99XwfNwINrqKapqa/view?usp=sharing">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column AI/ML">
+                <div class="project-item">
+                    <img src="images/project_imgs/foram-image.png" alt="foram-img">
+                    <h3>Self-supervised MaskRCNN for Porosity Detection PyTorch</h3>
+                    <div>
+                        <p>Implementation of a self-supervised training pipeline for porosity detection using Mask R-CNN in PyTorch.</p>
+                        <a href="https://github.com/Sallyliubj/SelfSupervised-MaskRCNN-for-Porosity-Detection-PyTorch">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column AI/ML">
+                <div class="project-item">
+                    <img src="images/project_imgs/ml-blog-post.png" alt="ml-blog-post">
+                    <h3>Machine Learning Blog Post</h3>
+                    <div>
+                        <p>Implementation of supervised/unsupervised machine learning algorithms and deep neural networks.</p>               
+                        <a href="https://sallyliubj.github.io/MLBlogPost/">View &#8594;</a>
+                    </div>
+                </div>
+            </div>
+         <!-- END GRID -->
+        </div>
+    </div>
+
     <!-- Life/Hobbies Section -->
     <div id="hobbies">
         <div class="container">
-            <div class = "nav-btn">
+            <!-- <div class = "nav-btn">
                 <a href="#header">GO BACK</a>
-            </div>
-            <h2 class="sub-title">A More Interesting Side of Me</h2>
+            </div> -->
+            
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#hobbies">LIFE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <h2 class="sub-title">When I'm not coding, I enjoy...</h2>
             <div class="hobbies-list">
                 <div>
                     <i class="fa fa-cutlery"></i>
@@ -161,6 +262,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- JavaScript for Toggle Menu -->
     <script>
@@ -186,6 +288,54 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+   
+   <!-- JavaScript for Gallery -->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
 
 </body>
 </html>
