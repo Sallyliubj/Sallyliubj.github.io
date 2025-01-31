@@ -94,9 +94,16 @@ nav .fa{
 }
 /* for smaller screen */
 @media screen and (max-width:700px){
+    #header{
+        height:100vh;
+    }
     .text-box h2{
         font-size:20px;
     }
+    .text-box p{
+        font-size:12px;
+    }
+
     .nav-links ul li{
         display:block;
     }
@@ -122,19 +129,19 @@ nav .fa{
     .nav-links ul{
         padding:30px;
     }
-
+    .hero-btn{
+        padding:6px 15px;
+        font-size:12px;
+    }
     .footer{
         width:100%;
         text-align:center;
         padding:200px 0;
-        margin-top: 350px;
+        /* margin-top: 30px; */
     }
-    .footer h4{
-        margin-bottom:10px;
+    .footer .icons{
+        margin-bottom:20px;
         margin-top:10px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        color:#e4b96b;
-        font-size:small;
     }
     .icons .fa{
         color:#e5a734;
@@ -340,6 +347,16 @@ width:100%;
         font-size: 20px;
         margin-top: 15px;
     }
+    .about-col-1 {
+        margin-top:-120px;
+    }
+    .about-col-1 img{
+        width: 150px; 
+        height: auto; 
+        border-radius: 10%;
+        box-shadow: 6px 6px 8px rgba(229, 167, 52, 0.8);
+        transition: transform 0.3s ease;
+    }
     .about-col-2 {
         margin-left: 0;
         margin-right:auto;
@@ -374,11 +391,17 @@ width:100%;
         max-width: 100%;
         overflow:visible;
     }
+    .tab-contents{
+        font-size: 3.2vw; 
+    }
     .tab-links.active-link::after{
         width:50%;
     }
     .tab-contents ul li span{
-        font-size: 3.2vw;
+        font-size: 3.0vw;
+    }
+    .tab-contents ul li p{
+        font-size: 3.0vw;
     }
     .tab-contents ul li{
         list-style:none;
@@ -461,6 +484,10 @@ width:100%;
     transform:translateY(-10px);
 }
 @media screen and (max-width:700px){
+    #hobbies{
+        height:auto;
+    }
+
     .nav-links ul li{
         display:block;
     }
@@ -674,3 +701,62 @@ width:100%;
     background-color: #666;
     color: white;
 }
+
+@media (max-width: 700px) {
+    /* Let the main container shrink to fit content instead of forcing full viewport height */
+    #projects {
+        height: auto; 
+    }
+  
+    /* Stack columns vertically instead of side-by-side */
+    .row {
+        flex-direction:column;
+        align-items: center;      /* Center items horizontally */
+        row-gap: 20px;           /* Space between stacked items */
+    }
+  
+    /* Make each column 100% width on small screens */
+    .column {
+        width: 100%;
+        padding: 10px 0;         /* Simplify spacing */
+    }
+    .project-item {
+        overflow: hidden;
+        width: 200px;
+        height: 150px;
+    }
+    .project-item img {
+        object-fit: cover;
+        width: 200px;
+        height:150px;
+    }
+
+    /* Adjust the inside container’s height if needed */
+    .project-item div {
+        height: auto;            /* Let text flow naturally */
+    }
+    
+    /* Optional font-size tweak for small screens */
+    .project-item h3 {
+        font-size: 0.8rem;       /* Scale text up or down as needed */
+        height: 60px;
+    }
+    
+    .project-item div{
+        height: 200px;
+        background:rgba(50, 50, 50, 0.8);
+        border-radius: 8px;
+    }
+
+    .project-item p {
+        font-size: 0.7rem;
+    }
+    .project-item div a {
+        font-size: 0.7rem;
+    }
+
+    .nav-links{
+        height:100vh;
+    }
+  }
+  

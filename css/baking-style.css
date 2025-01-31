@@ -231,3 +231,74 @@ html{
       background-color: #666;
       color: white;
     }
+
+@media screen and (max-width:700px){
+  #header {
+    height: auto;
+    background-position: center;
+  }
+
+  /* Adjust the back nav-button so it's not pushed too far to the right */
+  .nav-btn a {
+    margin-left: 0;
+  }
+  div .container h2{
+    font-size:1em;
+  }
+  div .container p{
+    font-size:0.7em;
+    padding: 12px;
+  }
+
+  /* Let the baking-list take up the full width and reduce margins */
+  .baking-list {
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* Display one item per row on narrow screens */
+    grid-template-columns: 1fr; 
+  }
+
+  /* Let the images scale fully within their parent */
+  .bake img {
+    width: 200px;
+    /* max-width:200px; remove fixed 280px width */
+  }
+
+  /* The layer can fill the parent’s width */
+  .layer {
+    width: 200px;
+    left: 0; 
+    /* Adjust left offset if needed */
+  }
+  .bake:hover .layer{
+    height:100%;
+    width:230px;
+    bottom:30px;
+    /* left:-15px; */
+}
+
+  /* Gallery columns (bread recipe) go full width, stacking vertically */
+  .row .column {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
+  /* Let content boxes expand naturally */
+  .content {
+    height: auto;
+  }
+  #bread-recipe h4{
+    margin-bottom: 10px;
+  }
+
+  #myBtnContainer{
+    font-size: .8em;
+  }
+  .btn {
+    padding: 6px 6px;
+  }
+}

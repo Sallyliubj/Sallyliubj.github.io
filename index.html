@@ -12,8 +12,8 @@
 <body>
     <section id="header">
         <nav>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinksHeader">
+                <i class="fa fa-times-circle-o" onclick="hideMenu('navLinksHeader')"></i>
                 <ul>
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="#hobbies">LIFE</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu('navLinksHeader')"></i>
         </nav>
 
         <div class="text-box">
@@ -47,8 +47,8 @@
         </div>
          -->
         <nav>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinksAbout">
+                <i class="fa fa-times-circle-o" onclick="hideMenu('navLinksAbout')"></i>
                 <ul>
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -56,7 +56,7 @@
                     <li><a href="#hobbies">LIFE</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu('navLinksAbout')"></i>
         </nav>
 
         <div class="container">
@@ -79,15 +79,18 @@
                             
                             <li><span>Columbia University</span><br>B.S in Computer Science (Graduation Year: 2026)</li>
                             
-                            <li><span><a href="https://www.middlebury.edu/">Middlebury College</a></span><br>B.A in Mathematics and Computer Science (Graduation Year: 2025)</li>
+                            <li><span>Middlebury College</a></span><br>B.A in Mathematics and Computer Science (Graduation Year: 2025)</li>
                             
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Software Engineer Intern (Ongoing)</span><br>One Sip, LLC (Startup)
-                                <p>Developing the backend server infrastructure using Django, deploying database using MongoDB, implementing core functonalities for the MVP</p>
+                            <li><span>Machine Learning Engineer Intern (Ongoing)</span><br>Kimber Health
+                                <p>Building a multi-model chatbot framework in UChat using GPT-4 and Gemini, addressing healthcare inquiries</p>
+                            </li>
+                            <li><span>Software Engineer Intern</span><br>One Sip, LLC
+                                <p>Developed the backend server infrastructure using Django, deploying database using MongoDB, implementing core functonalities for the MVP</p>
                             </li>
                             <li><span>Project Assistant</span><br>Middlebury College
                                 <p>Guided students through their independent senior capstone projects</p>
@@ -97,14 +100,14 @@
                                 <p>Graded assignments and tutored for courses Data Structures and Machine Learning</p>
                             </li>
                             <li><span>Product Engineer Intern</span><br>Huatai Securities
-                                <p>Real-time 3D human body motion capture with monocular camera</p>
+                                <p>Contributed to the R&D of a dgital human model that could realize real-time 3D human body motion capture with monocular camera</p>
                             </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="research">
                         <ul>
-                            <li><span>Hybrid AI for Drug Discovery (Ongoing)</span><br>Fall 2024
+                            <li><span>Hybrid AI for Drug Discover (Ongoing)</span><br>Fall 2024
                                 <p>Research on domain-specific Large Language Models and applications of Graph Neural Networks on knowledge graphs and ontology</p>
                             </li>
                             <li><span>An active Reinforcement Learning from Human Feedback (RLHF) Framework for object detection and segmentation</span><br>Summer 2024
@@ -134,8 +137,8 @@
     <!-- Projects Section -->
     <div id="projects">
         <nav>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinksProjects">
+                <i class="fa fa-times-circle-o" onclick="hideMenu('navLinksProjects')"></i>
                 <ul>
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -143,7 +146,7 @@
                     <li><a href="#hobbies">LIFE</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu('navLinksProjects')"></i>
         </nav>
         <h2 class="sub-title">Projects</h2>
 
@@ -157,7 +160,7 @@
         <div class="row">
             <div class="column software">
                 <div class="project-item">
-                    <img src="" alt="sports-review-app">
+                    <img src="" alt="">
                     <h3>Sports Review App</h3>
                     <div>
                         <p>A Flask-based web application for searching and reviewing sports activities</p>
@@ -227,8 +230,8 @@
             </div> -->
             
             <nav>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+                <div class="nav-links" id="navLinksHobbies">
+                    <i class="fa fa-times-circle-o" onclick="hideMenu('navLinksHobbies')"></i>
                     <ul>
                         <li><a href="#header">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
@@ -236,7 +239,7 @@
                         <li><a href="#hobbies">LIFE</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <i class="fa fa-bars" onclick="showMenu('navLinksHobbies')"></i>
             </nav>
             
             <h2 class="sub-title">When I'm not coding, I enjoy...</h2>
@@ -267,10 +270,12 @@
     <!-- JavaScript for Toggle Menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-        function showMenu() {
+        function showMenu(navId) {
+            var navLinks = document.getElementById(navId);
             navLinks.style.right = "0";
         }
-        function hideMenu() {
+        function hideMenu(navId) {
+            var navLinks = document.getElementById(navId);
             navLinks.style.right = "-200px";
         }
 
